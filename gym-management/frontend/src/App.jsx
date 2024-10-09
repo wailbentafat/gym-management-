@@ -4,6 +4,7 @@ import './App.css';
 import {Greet} from "../wailsjs/go/main/App";
 import Outlet from './component/outlet';
 
+
 function App() {
   
     return (
