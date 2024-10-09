@@ -1,0 +1,32 @@
+# Node modules
+node_modules/
+
+# Build output
+frontend/dist/
+frontend/wailsjs/go/main/App.js
+frontend/wailsjs/go/main/App.d.ts
+
+# Wails specific files
+*.exe
+*.manifest
+*.nsi
+
+# Go module files
+go.mod
+go.sum
+
+# Logs
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Environment variables
+.env
