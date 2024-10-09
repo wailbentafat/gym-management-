@@ -11,6 +11,7 @@ export default function Outlet() {
             <div className="h-full flex flex-col w-full">
                 <Navbar/>
                 <BrowserRouter>
+
                   <Routes>
                     <Route path="/" element={<></>}></Route>
                     <Route path="test" element={<>test</>} />

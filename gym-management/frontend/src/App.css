@@ -2,3 +2,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+#dashboardvect{
+    position: absolute;
+    left: 12.64%;
+    right: 85.55%;
+    top: 27.79%;
+    bottom: 70.11%;
+
+    background: #FFFFFF;
+
+}
