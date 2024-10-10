@@ -8,7 +8,8 @@ module.exports = {
     colors:{
       "white":"white",
       "beigecustom":"#ede9e9",
-      "blueside":"#1a1363"
+      "blueside":"#1a1363",
+      "activebutton":"#ece9e9"
     }
   },
   plugins: [],
