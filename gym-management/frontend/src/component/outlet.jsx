@@ -2,23 +2,22 @@ import Sidebar from "./sidebar";
 import Navbar from "./navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-
-export default function Outlet() {
-    return(
+export default function Outlet({ children }) {
+    return (
         <div className="h-full flex flex-row">
-            <Sidebar/>
+            <Sidebar />
 
             <div className="h-full flex flex-col w-full">
-                <Navbar/>
+                <Navbar />
                 <BrowserRouter>
-
-                  <Routes>
-                    <Route path="/" element={<></>}></Route>
-                    <Route path="test" element={<>test</>} />
-                  </Routes>
+                    <Routes>
+                        <Route path="/" element={children} /> 
+                        <Route path="test" element={<>test</>} />
+                    </Routes>
                 </BrowserRouter>
             </div>
-                
         </div>
-    )
+
+        
+    );
 }

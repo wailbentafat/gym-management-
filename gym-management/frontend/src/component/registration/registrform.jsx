@@ -22,7 +22,7 @@ export default function RegistrForm() {
   };
   return (
     
-    <form onSubmit={handlesubmit} className=" flex flex-col  px-8 pt-6 pb-8 ">
+    <form onSubmit={handlesubmit} className=" flex flex-col  w-3/4 h-3/4   ">
       <div>
         <label>Name</label>
         <input
