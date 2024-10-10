@@ -3,7 +3,7 @@ import Navbar from "./navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
-export default function Outlet() {
+export default function Outlet({children}) {
     return(
       <BrowserRouter>
 
