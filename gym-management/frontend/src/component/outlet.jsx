@@ -5,20 +5,24 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function Outlet() {
     return(
-        <div className="h-full flex flex-row">
-            <Sidebar/>
+      <BrowserRouter>
 
+          <div className="h-full flex flex-row">
+            <Sidebar/>
             <div className="h-full flex flex-col w-full">
                 <Navbar/>
-                <BrowserRouter>
-
-                  <Routes>
-                    <Route path="/" element={<></>}></Route>
-                    <Route path="test" element={<>test</>} />
-                  </Routes>
-                </BrowserRouter>
+                <Routes>
+                  <Route path="/" element={<>dashboard</>}/>
+                  <Route path="/admin" element={<>admin</>} />
+                  <Route path="/reg" element={<>registration</>} />
+                  <Route path="/plan" element={<>plan</>} />
+                  <Route path="/payment" element={<>payment</>} />
+                  <Route path="/inv" element={<>inventory</>} />
+                  <Route path="/members" element={<>members</>} />
+                  <Route path="/report" element={<>report</>} />
+                </Routes>
             </div>
-                
-        </div>
+          </div>
+        </BrowserRouter>
     )
 }

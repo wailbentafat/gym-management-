@@ -6,7 +6,7 @@ function returnIsActiveOrNot(props){
     if(props.isActive=="false"){
         return <>
 
-            <Link to={props.linkto} className="rounded-l-lg px-5 py-3 bg-blueside text-white flex flex-row items-center w-3/4">
+            <Link to={props.linkto} className="rounded-l-lg px-5 py-3 bg-blueside text-white flex flex-row items-center w-10/12">
                         <AllSvg color={props.isActive=="false"?"white":"#1a1363"} svg={props.iconpath}/>
                         <span className="ml-3.5">{props.text}</span>
             </Link>
@@ -14,7 +14,7 @@ function returnIsActiveOrNot(props){
     }else{
         return <>
         
-        <Link to={props.linkto} className="rounded-l-lg px-5 py-3 bg-activebutton text-blueside flex flex-row items-center w-3/4">
+        <Link to={props.linkto} className="rounded-l-lg px-5 py-3 bg-activebutton text-blueside flex flex-row items-center w-10/12">
                         <AllSvg color={props.isActive=="false"?"white":"#1a1363"} svg={props.iconpath}/>
                         <span className="ml-3.5">{props.text}</span>
             </Link>
@@ -24,9 +24,7 @@ function returnIsActiveOrNot(props){
 export default function CustomLink(props) {
     return (
         <>
-        <BrowserRouter>
         {returnIsActiveOrNot(props)}
 
-        </BrowserRouter>
         </>);
 }
