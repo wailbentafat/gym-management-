@@ -2,7 +2,7 @@ import Sidebar from "./sidebar";
 import Navbar from "./navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Registartionpage from "../pages/registration";
-
+import Planpage from "../pages/plan";
 export default function Outlet() {
     return(
       <BrowserRouter>
@@ -14,7 +14,7 @@ export default function Outlet() {
                   <Route path="/" element={<>dashboard</>}/>
                   <Route path="/admin" element={<>admin</>} />
                   <Route path="/reg" element={<Registartionpage/>} />
-                  <Route path="/plan" element={<>plan</>} />
+                  <Route path="/plan" element={<Planpage/>} />
                   <Route path="/payment" element={<>payment</>} />
                   <Route path="/inv" element={<>inventory</>} />
                   <Route path="/members" element={<>members</>} />
