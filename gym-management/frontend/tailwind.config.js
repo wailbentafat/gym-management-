@@ -9,7 +9,8 @@ module.exports = {
       "white":"white",
       "beigecustom":"#ede9e9",
       "blueside":"#1a1363",
-      "activebutton":"#ece9e9"
+      "activebutton":"#ece9e9",
+      "yellow2":"#DEBA3B"
     }
   },
   plugins: [],
