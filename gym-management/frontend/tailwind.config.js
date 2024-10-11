@@ -4,6 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}", // Adjust this based on your file structure
   ],
   theme: {
+
+    fontFamily: {
+      "poppins":["Poppins"],
+      "monument":["monument extended"]
+     },
     extend: {},
     colors:{
       "white":"white",
