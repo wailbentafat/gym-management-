@@ -22,7 +22,7 @@ export default function RegistrForm() {
   };
   return (
     
-    <form onSubmit={handlesubmit} className=" flex flex-col  w-3/4 h-3/4   ">
+    <form onSubmit={handlesubmit} className="flex flex-col  bg-white rounded-lg shadow-xl border-white border-2 w-full h-full  grid grid-cols-2 gap-4 md:grid-cols-2 md:gap-6  p-4">
       <div>
         <label>Name</label>
         <input
@@ -30,6 +30,7 @@ export default function RegistrForm() {
           name="name"
           value={information.name}
           onChange={handleChange}
+          className="w-full p-2 border border-gray-300 rounded-md"
         />
       </div>
       <div>
@@ -39,6 +40,7 @@ export default function RegistrForm() {
           name="phonenumber"
           value={information.phonenumber}
           onChange={handleChange}
+          className="w-full p-2 border border-gray-300 rounded-md"
         />
       </div>
       <div>
@@ -48,6 +50,7 @@ export default function RegistrForm() {
           name="joindate"
           value={information.joindate}
           onChange={handleChange}
+          className="w-full p-2 border border-gray-300 rounded-md"
         />
       </div>
       <div>
@@ -62,8 +65,11 @@ export default function RegistrForm() {
           <option value="premium">Premium</option>
         </select>
       </div>
-      <button type="submit">Submit</button>
-      <button type="reset">Reset</button>
+      <div></div>
+      <div className="flex aleign-items-right justify-end">
+      <button type="submit" className="">Submit</button>
+      <button type="reset"  className="">Reset</button>
+      </div>
     </form>
  
   );
