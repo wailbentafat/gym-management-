@@ -18,6 +18,8 @@ export default function Outlet() {
                   <Route path="/inv" element={<>inventory</>} />
                   <Route path="/members" element={<>members</>} />
                   <Route path="/report" element={<>report</>} />
+                  <Route path="*" element={<>404</>} />
+                  <Route path ="/test" element={children} />
                 </Routes>
             </div>
           </div>
