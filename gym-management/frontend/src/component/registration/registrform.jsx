@@ -36,6 +36,10 @@ export default function RegistrForm() {
     { value: "standard", label: "Standard" },
     { value: "premium", label: "Premium" },
   ];
+  function cancel(event){
+    setInformation({name: "",phonenumber: "",joindate: "",plan: ""})
+    event.preventDefault();
+  }
 
   return (
     <form
@@ -102,7 +106,7 @@ export default function RegistrForm() {
       <div></div>
       <div className="flex align-items-right justify-start mt-7">
         <button type="submit" className="bg-blueside  text-white font-bold  rounded-full h-10 w-60 mr-2">Avail Membership</button>
-        <button type="reset" className="border-blueside  border text-blueside font-bold w-40 h-10 rounded-3xl border-2 bg-white ">Reset</button>
+        <button type="reset" className="border-blueside  border text-blueside font-bold w-40 h-10 rounded-3xl border-2 bg-white " onClick={(event)=>cancel(event)}>Reset</button>
       </div>
     </form>
   );
