@@ -1,7 +1,150 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CustomLink from "./SideCmp/CustomLink.jsx";
+import { useState } from "react";
 
 export default function Sidebar() {
+    const utlprt=window.location.pathname
+    
+    const [activelnk,setactivelnk]=useState(
+        {
+          link1:true,
+          link2:false,
+          link3:false,
+          link4:false,
+          link5:false,
+          link6:false,
+          link7:false,
+          link8:false,
+        }
+      )
+      function linkClickEv(){
+        var urlpath=window.location.pathname
+        switch (urlpath) {
+            case "/admin":
+                setactivelnk(
+                    {
+                        link1:false,
+                        link2:true,
+                        link3:false,
+                        link4:false,
+                        link5:false,
+                        link6:false,
+                        link7:false,
+                        link8:false,
+                      }
+                )
+                break;
+            case "/reg":
+                setactivelnk(
+                    {
+                        link1:false,
+                        link2:false,
+                        link3:true,
+                        link4:false,
+                        link5:false,
+                        link6:false,
+                        link7:false,
+                        link8:false,
+                      }
+                )
+                
+                break;
+            case "/plan":
+                setactivelnk(
+                    {
+                        link1:false,
+                        link2:false,
+                        link3:false,
+                        link4:true,
+                        link5:false,
+                        link6:false,
+                        link7:false,
+                        link8:false,
+                      }
+                )
+                
+                break;
+            case "/payment":
+                setactivelnk(
+                    {
+                        link1:false,
+                        link2:false,
+                        link3:false,
+                        link4:false,
+                        link5:true,
+                        link6:false,
+                        link7:false,
+                        link8:false,
+                      }
+                )
+                
+                break;
+            case "/inv":
+                setactivelnk(
+                    {
+                        link1:false,
+                        link2:false,
+                        link3:false,
+                        link4:false,
+                        link5:false,
+                        link6:true,
+                        link7:false,
+                        link8:false,
+                      }
+                )
+                
+                break;
+            case "/members":
+                setactivelnk(
+                    {
+                        link1:false,
+                        link2:false,
+                        link3:false,
+                        link4:false,
+                        link5:false,
+                        link6:false,
+                        link7:true,
+                        link8:false,
+                      }
+                )
+                
+                break;
+            case "/report":
+                setactivelnk(
+                    {
+                        link1:false,
+                        link2:false,
+                        link3:false,
+                        link4:false,
+                        link5:false,
+                        link6:false,
+                        link7:false,
+                        link8:true,
+                      }
+                )
+                
+                break;
+        
+            default:
+                setactivelnk(
+                    {
+                        link1:true,
+                        link2:false,
+                        link3:false,
+                        link4:false,
+                        link5:false,
+                        link6:false,
+                        link7:false,
+                        link8:false,
+                      }
+                )
+                break;
+        }
+    }
+    useEffect(() => 
+        {
+            linkClickEv();
+        },[utlprt]);
     return (
         <div className="relative w-1/4 min-h-full h-max bg-blueside text-white" id="sidebar">
             <div className="flex flex-col items-center mt-12">
@@ -22,15 +165,16 @@ export default function Sidebar() {
 
             </div>
             <ul className="my-8 pr-1 flex flex-col items-end space-y-5">
-                <CustomLink isActive="true" text="Dashboard" linkto="/" iconpath="dashboard"/>
-                <CustomLink isActive="false" text="Admin profile" linkto="/admin" iconpath="admin"/>
-                <CustomLink isActive="false" text="Registration" linkto="/reg" iconpath="registration"/>
-                <CustomLink isActive="false" text="Plan" linkto="/plan" iconpath="plan"/>
-                <CustomLink isActive="false" text="Payment" linkto="/payment" iconpath="payment"/>
-                <CustomLink isActive="false" text="Inventory" linkto="/inv" iconpath="inventory"/>
-                <CustomLink isActive="false" text="Members" linkto="/members" iconpath="members"/>
-                <CustomLink isActive="false" text="Report" linkto="/report" iconpath="report"/>
+                <div className="items-center w-10/12" onClick={linkClickEv}><CustomLink isActive={activelnk.link1} text="Dashboard" linkto="/" iconpath="dashboard"/></div>
+                <div className="items-center w-10/12" onClick={linkClickEv}><CustomLink isActive={activelnk.link2} text="Admin profile" linkto="/admin" iconpath="admin"/></div>
+                <div className="items-center w-10/12" onClick={linkClickEv}><CustomLink isActive={activelnk.link3} text="Registration" linkto="/reg" iconpath="registration"/></div>
+                <div className="items-center w-10/12" onClick={linkClickEv}><CustomLink isActive={activelnk.link4} text="Plan" linkto="/plan" iconpath="plan"/></div>
+                <div className="items-center w-10/12" onClick={linkClickEv}><CustomLink isActive={activelnk.link5} text="Payment" linkto="/payment" iconpath="payment"/></div>
+                <div className="items-center w-10/12" onClick={linkClickEv}><CustomLink isActive={activelnk.link6} text="Inventory" linkto="/inv" iconpath="inventory"/></div>
+                <div className="items-center w-10/12" onClick={linkClickEv}><CustomLink isActive={activelnk.link7} text="Members" linkto="/members" iconpath="members"/></div>
+                <div className="items-center w-10/12" onClick={linkClickEv}><CustomLink isActive={activelnk.link8} text="Report" linkto="/report" iconpath="report"/></div>
             </ul>
         </div>
     );
+    
 }
