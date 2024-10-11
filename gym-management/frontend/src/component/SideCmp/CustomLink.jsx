@@ -3,11 +3,11 @@ import { BrowserRouter,Link } from "react-router-dom";
 import AllSvg from "./AllSvg";
 
 function returnIsActiveOrNot(props){
-    if(props.isActive=="false"){
+    if(!props.isActive){
         return <>
 
             <Link to={props.linkto} className="rounded-l-lg px-5 py-3 bg-blueside text-white flex flex-row items-center w-10/12">
-                        <AllSvg color={props.isActive=="false"?"white":"#1a1363"} svg={props.iconpath}/>
+                        <AllSvg color={!props.isActive?"white":"#1a1363"} svg={props.iconpath}/>
                         <span className="ml-3.5">{props.text}</span>
             </Link>
         </>
@@ -15,7 +15,7 @@ function returnIsActiveOrNot(props){
         return <>
         
         <Link to={props.linkto} className="rounded-l-lg px-5 py-3 bg-activebutton text-blueside flex flex-row items-center w-10/12">
-                        <AllSvg color={props.isActive=="false"?"white":"#1a1363"} svg={props.iconpath}/>
+                        <AllSvg color={!props.isActive?"white":"#1a1363"} svg={props.iconpath}/>
                         <span className="ml-3.5">{props.text}</span>
             </Link>
         </>

@@ -2,11 +2,9 @@ import Sidebar from "./sidebar";
 import Navbar from "./navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-
 export default function Outlet() {
     return(
       <BrowserRouter>
-
           <div className="h-full flex flex-row">
             <Sidebar/>
             <div className="h-full flex flex-col w-full">
