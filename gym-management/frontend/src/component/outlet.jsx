@@ -6,9 +6,9 @@ import Registartionpage from "../pages/registration";
 export default function Outlet() {
     return(
       <BrowserRouter>
-          <div className="h-full flex flex-row">
+          <div className="items-stretch h-max min-h-full flex flex-row">
             <Sidebar/>
-            <div className="h-full flex flex-col w-full">
+            <div className="min-h-full flex flex-col w-full">
                 <Navbar/>
                 <Routes>
                   <Route path="/" element={<>dashboard</>}/>
