@@ -6,7 +6,7 @@ import Registartionpage from "../pages/registration";
 export default function Outlet() {
     return(
       <BrowserRouter>
-          <div className="items-stretch h-max min-h-full flex flex-row">
+          <div className="items-stretch min-h-full flex flex-row">
             <Sidebar/>
             <div className="min-h-full flex flex-col w-full">
                 <Navbar/>
