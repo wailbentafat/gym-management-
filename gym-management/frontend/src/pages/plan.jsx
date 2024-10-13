@@ -4,7 +4,7 @@ import Addplan from "../component/plans/addplan";
 
 export default function Planpage(){
     return(
-        <div>
+        <div className="bg-beigecustom ">
             <button>add plan</button>
             <Addplan/>
             <Plan/>

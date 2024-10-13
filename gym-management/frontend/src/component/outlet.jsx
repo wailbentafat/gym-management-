@@ -6,9 +6,9 @@ import Planpage from "../pages/plan";
 export default function Outlet() {
     return(
       <BrowserRouter>
-          <div className="items-stretch min-h-full flex flex-row">
+          <div className="overflow-hidden h-screen items-stretch min-h-full flex flex-row">
             <Sidebar/>
-            <div className="min-h-full flex flex-col w-full">
+            <div className="h-screen overflow-y-auto flex flex-col w-full">
                 <Navbar/>
                 <Routes>
                   <Route path="/" element={<>dashboard</>}/>
@@ -22,7 +22,7 @@ export default function Outlet() {
                   <Route path="*" element={<>404</>} />
                   <Route path ="/test" element={<>hna cmp</>} />
                 </Routes>
-            </div>
+                </div>
           </div>
         </BrowserRouter>
     )
