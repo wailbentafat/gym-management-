@@ -2,12 +2,53 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function PaymentHisto() {
+    const [fetchE,updateE]=useState([
+        {
+            name:"Member 1",
+            id:"SFM2301N1",
+            plan:"1 Month - PT",
+            month:"JAN",
+            datep:"10-01-2023",
+            amount:"1300"
+
+        },
+        {
+
+            name:"Member 2",
+            id:"SFM2301N2",
+            plan:"6 Month - PT",
+            month:"JAN",
+            datep:"10-01-2023",
+            amount:"6000"
+        },
+        {
+
+            name:"Member 3",
+            id:"SFM2301N3",
+            plan:"1 Month - M",
+            month:"JAN",
+            datep:"10-01-2023",
+            amount:"1200"
+        },
+        {
+
+            name:"Member 4",
+            id:"SFM2301N4",
+            plan:"3 Month",
+            month:"JAN",
+            datep:"10-01-2023",
+            amount:"3500"
+        }
+    ])
     function keyupEv(){
         var elem=document.querySelector("#inptRowFetch")
         if(elem!=null){
             
             chngsize(elem.value.length==0?1:elem.value.length);
         }
+    }
+    function retTabElem(){ 
+        console.log(fetchE.length)
     }
     const [inptsize,chngsize]=useState(3)
     return <form className="mt-20 px-10 pt-5 pb-10 bg-white rounded-xl shadow-xl border-white border-2 flex flex-col items-stretch">
@@ -29,6 +70,7 @@ export default function PaymentHisto() {
             </div>
 
             <table className="mt-5">
+            <tbody>
                   <tr className="text-bluestmn text-left font-poppins font-bold text-lg">
                     <th>Member Name</th>
                     <th>Member ID</th>
@@ -37,38 +79,18 @@ export default function PaymentHisto() {
                     <th>Date Paid</th>
                     <th>Amount</th>
                   </tr>
-                  <tr className="text-bluestmn font-poppins font-light text-base">
-                    <td>Member 1</td>
-                    <td>SFM2301N1</td>
-                    <td>1 Month - PT</td>
-                    <td>JAN</td>
-                    <td>10-01-2023</td>
-                    <td>1300</td>
-                  </tr>
-                  <tr className="text-bluestmn font-poppins font-light text-base">
-                    <td>Member 2</td>
-                    <td>SFM2301N2</td>
-                    <td>6 Month - PT</td>
-                    <td>JAN</td>
-                    <td>10-01-2023</td>
-                    <td>6000</td>
-                  </tr>
-                  <tr className="text-bluestmn font-poppins font-light text-base">
-                    <td>Member 3</td>
-                    <td>SFM2301N3</td>
-                    <td>1 Month - M</td>
-                    <td>JAN</td>
-                    <td>10-01-2023</td>
-                    <td>1200</td>
-                  </tr>
-                  <tr className="text-bluestmn font-poppins font-light text-base">
-                    <td>Member 4</td>
-                    <td>SFM2301N4</td>
-                    <td>3 Month</td>
-                    <td>JAN</td>
-                    <td>10-01-2023</td>
-                    <td>3500</td>
-                  </tr>
+                  {
+                    fetchE.map((item)=>{ return <tr key={item.id} className="text-bluestmn font-poppins font-light text-base">
+                        <td>{item.name}</td>
+                        <td>{item.id}</td>
+                        <td>{item.plan}</td>
+                        <td>{item.month}</td>
+                        <td>{item.datep}</td>
+                        <td>{item.amount}</td>
+                      </tr>
+                  })
+                  }
+                </tbody>
             </table> 
     </form>
 }
