@@ -51,7 +51,7 @@ export default function PaymentHisto() {
         console.log(fetchE.length)
     }
     const [inptsize,chngsize]=useState(3)
-    return <form className="mt-20 px-10 pt-5 pb-10 bg-white rounded-xl shadow-xl border-white border-2 flex flex-col items-stretch">
+    return <form className="mt-12 px-10 pt-5 pb-10 bg-white rounded-xl shadow-xl border-white border-2 flex flex-col items-stretch">
             <span className="font-poppins text-xl font-extrabold ml-1">Payment History</span>
             <div className="flex flex-row mt-10 ml-2 items-center">
                 <span className="font-poppins text-sm">Show Entities</span>
