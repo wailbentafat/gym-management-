@@ -114,7 +114,7 @@ export default function RegistrForm() {
         </button>
         <button 
           type="reset" 
-          className="border-blueside border text-blueside font-bold w-40 h-10 rounded-3xl border-2 bg-white "
+          className="border-blueside text-blueside font-bold w-40 h-10 rounded-3xl border-2 "
           onClick={(event) => cancel(event)}
         >
           Reset
