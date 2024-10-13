@@ -16,7 +16,8 @@ module.exports = {
       "blueside":"#1a1363",
       "bluestmn":"#1A1363",
       "activebutton":"#ece9e9",
-      "yellow2":"#DEBA3B"
+      "yellow2":"#DEBA3B",
+      "purple1":"#A09DBD"
     }
   },
   plugins: [],

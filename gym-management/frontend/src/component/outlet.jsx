@@ -3,6 +3,8 @@ import Navbar from "./navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Registartionpage from "../pages/registration";
 import Planpage from "../pages/plan";
+import Testing from "../pages/Testing";
+import SReport from "../pages/SReport";
 export default function Outlet() {
     return(
       <BrowserRouter>
@@ -18,9 +20,9 @@ export default function Outlet() {
                   <Route path="/payment" element={<>payment</>} />
                   <Route path="/inv" element={<>inventory</>} />
                   <Route path="/members" element={<>members</>} />
-                  <Route path="/report" element={<>report</>} />
+                  <Route path="/report" element={<SReport/>} />
+                  <Route path ="/test" element={<Testing/>}/>
                   <Route path="*" element={<>404</>} />
-                  <Route path ="/test" element={<>hna cmp</>} />
                 </Routes>
             </div>
           </div>
