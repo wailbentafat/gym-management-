@@ -37,7 +37,7 @@ export default function AddPlan() {
             name="name"
             value={inf.name}
             onChange={handleChange}
-            className="border p-2 mt-3 rounded w-full text-white font-bold "
+            className="border p-2 mt-3 rounded-xl w-full text-white font-bold "
             required
           />
         </div>
@@ -50,13 +50,13 @@ export default function AddPlan() {
             name="price"
             value={inf.price}
             onChange={handleChange}
-            className="border p-2 mt-3 rounded w-full"
+            className="border p-2 mt-3 rounded-xl w-full"
             required
           />
         </div>
 
         <div className="">
-          <label className="font-bold text-white mb-4 text-xl">
+          <label className="font-bold  text-white mb-4 text-xl">
             Categories
           </label>
           <input
@@ -64,7 +64,7 @@ export default function AddPlan() {
             name="categories"
             value={inf.categories}
             onChange={handleChange}
-            className="border p-2 mt-3 rounded w-full"
+            className="border p-2 mt-3 rounded-2xl w-full"
             required
           />
         </div>
@@ -77,7 +77,7 @@ export default function AddPlan() {
             name="timeinweek"
             value={inf.timeinweek}
             onChange={handleChange}
-            className="border  mt-3 p-2 rounded w-full"
+            className="border  mt-3 p-2 rounded-2xl w-full"
             required
           />
         </div>
@@ -85,8 +85,8 @@ export default function AddPlan() {
         </div>
       <div className="bg-blue-500 text-white p-5 gap-4 mb-5   flex  w-full justify-end ">
        
-        <button className=" px-3 py-2 border rounded-full">cancel</button>
-        <button type="submit" className=" border  px-3 py-2 rounded-full ">Add Plan</button>
+        <button className=" px-4 py-2 bg-sfr2 text-blueside  font-bold rounded-3xl ">cancel</button>
+        <button type="submit" className="  bg-white px-9 py-2 text-bluestmn font-semibold rounded-3xl ">Save</button>
       </div>
       
       

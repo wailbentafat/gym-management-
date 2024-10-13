@@ -17,7 +17,11 @@ module.exports = {
       "bluestmn":"#1A1363",
       "activebutton":"#ece9e9",
       "yellow2":"#DEBA3B",
-      "purple1":"#A09DBD"
+      "purple1":"#A09DBD",
+      "zr9":"#77749B",
+      "zr91":"#5D57A3",
+      "sfr":"#FFFADF",
+      "sfr2":"#DEBA3B"
     }
   },
   plugins: [],

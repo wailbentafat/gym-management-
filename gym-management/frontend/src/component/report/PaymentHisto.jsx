@@ -47,6 +47,7 @@ export default function PaymentHisto() {
             chngsize(elem.value.length==0?1:elem.value.length);
         }
     }
+    
     function retTabElem(){ 
         console.log(fetchE.length)
     }
