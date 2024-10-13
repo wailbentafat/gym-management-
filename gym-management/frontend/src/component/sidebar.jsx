@@ -146,7 +146,7 @@ export default function Sidebar() {
             linkClickEv();
         },[utlprt]);
     return (
-        <div className="relative w-1/4 min-h-full grow bg-blueside text-white" id="sidebar">
+        <div className="relative overflow-scroll w-1/4 min-h-full grow bg-blueside text-white" id="sidebar">
             <div className="flex flex-col items-center mt-12">
             <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_246_161)">
