@@ -37,7 +37,7 @@ export default function AddPlan() {
             name="name"
             value={inf.name}
             onChange={handleChange}
-            className="border p-2 mt-3 rounded-xl w-full text-white font-bold "
+            className="border p-2 mt-3 rounded-xl w-full text-black font-bold "
             required
           />
         </div>
@@ -56,7 +56,7 @@ export default function AddPlan() {
         </div>
 
         <div className="">
-          <label className="font-bold  text-white mb-4 text-xl">
+          <label className="font-bold text-white mb-4 text-xl">
             Categories
           </label>
           <input
