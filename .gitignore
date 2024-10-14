@@ -30,3 +30,27 @@ Thumbs.db
 
 # Environment variables
 .env
+# Flutter/Dart/Pub related
+**/pubspec.lock
+.dart_tool/
+.packages
+build/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Flutter.podspec.lock
+ios/Pods/
+ios/Podfile.lock
+ios/Runner.xcworkspace/
+android/.gradle/
+android/app/debug/
+android/app/release/
+android/local.properties
+android/.idea/
+android/app/build/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code settings
+.vscode/
