@@ -5,6 +5,7 @@ import Registartionpage from "../pages/registration";
 import Planpage from "../pages/plan";
 import Testing from "../pages/Testing";
 import SReport from "../pages/SReport";
+import Payment from "../pages/Payment";
 export default function Outlet() {
     return(
       <BrowserRouter>
@@ -17,7 +18,7 @@ export default function Outlet() {
                   <Route path="/admin" element={<>admin</>} />
                   <Route path="/reg" element={<Registartionpage/>} />
                   <Route path="/plan" element={<Planpage/>} />
-                  <Route path="/payment" element={<>payment</>} />
+                  <Route path="/payment" element={<Payment/>} />
                   <Route path="/inv" element={<>inventory</>} />
                   <Route path="/members" element={<>members</>} />
                   <Route path="/report" element={<SReport/>} />

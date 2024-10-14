@@ -166,7 +166,7 @@ export default function Sidebar() {
             </div>
             <ul className="my-8 pr-1 flex flex-col items-end space-y-5">
                 <div className="items-center w-10/12" onClick={linkClickEv}><CustomLink isActive={activelnk.link1} text="Dashboard" linkto="/" iconpath="dashboard"/></div>
-                <div className="items-center w-10/12" onClick={linkClickEv}><CustomLink isActive={activelnk.link2} text="Admin profile" linkto="/admin" iconpath="admin"/></div>
+                <div style={{pointerEvents:"none"}} className="items-center w-10/12" onClick={linkClickEv}><CustomLink isActive={activelnk.link2} text="Admin profile" linkto="/admin" iconpath="admin"/></div>
                 <div className="items-center w-10/12" onClick={linkClickEv}><CustomLink isActive={activelnk.link3} text="Registration" linkto="/reg" iconpath="registration"/></div>
                 <div className="items-center w-10/12" onClick={linkClickEv}><CustomLink isActive={activelnk.link4} text="Plan" linkto="/plan" iconpath="plan"/></div>
                 <div className="items-center w-10/12" onClick={linkClickEv}><CustomLink isActive={activelnk.link5} text="Payment" linkto="/payment" iconpath="payment"/></div>
