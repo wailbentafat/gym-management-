@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gym/pages/splash.dart';
 import 'theme.dart';
 import '../pages/profile.dart';
 
@@ -8,7 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'gym',
       theme: apptheme(),
-      home: profilepage(),
+      home: Splash(),
     );
   }
 }
