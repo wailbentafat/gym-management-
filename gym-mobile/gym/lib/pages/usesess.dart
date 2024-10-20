@@ -5,12 +5,19 @@ class Usesession extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Use Session"),
+        title: const Text("Renaw contract"
+        text),
       ),
-      body: Center(
-        child: const Text(
-          'This is the Use Session page',
-          style: TextStyle(fontSize: 18),
+      body: DefaultTextStyle(
+        style:TextStyle(
+          fontSize:  20,
+          color:Colors.blue,
+          fontWeight: Fontweight.bold
+
+
+        ),
+      ),
+          
         ),
       ),
     );
