@@ -26,7 +26,7 @@ export default function Actvmm() {
             placeholder="Search here"
             onChange={handlesearch}
           />
-          <CiSearch className="size-7 font-extrabold text-white" />
+          <CiSearch className="text-2xl font-extrabold text-white" />
         </div>
         <div className="mr-3 mt-3 text-white font-bold">sort here</div>
       </div>
@@ -46,9 +46,9 @@ export default function Actvmm() {
               <td className="font-bold px-4 py-2 text-white">{member.name}</td>
               <td className="font-bold px-4 py-2 ">
                 {member.etat ? (
-                  <IoIosCheckmarkCircleOutline className="text-lime-700  size-6" />
+                  <IoIosCheckmarkCircleOutline className="text-lime-500 text-2xl" />
                 ) : (
-                  <IoIosCloseCircleOutline className="text-orange-800 size-6" />
+                  <IoIosCloseCircleOutline className="text-orange-500 text-2xl" />
                 )}
               </td>
             </tr>
