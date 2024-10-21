@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'profile.dart';
 import 'mainscreen.dart';
 class Splash extends StatefulWidget {
   const Splash({super.key});

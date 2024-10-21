@@ -5,6 +5,8 @@ import 'package:gym/pages/usesess.dart';
 import 'package:gym/widgets/navbar.dart'; // Ensure this imports your CustomBottomNavigationBar
 
 class Main extends StatefulWidget {
+  const Main({super.key});
+
   @override
   _MainState createState() => _MainState();
 }
@@ -12,9 +14,9 @@ class Main extends StatefulWidget {
 class _MainState extends State<Main> {
   int _currentIndex = 0;
   final List<Widget> _pages = [
-    Profile(),
+    const Profile(),
     Renawcontract(),
-    Usesession(),
+    const Usesession(),
   ];
   @override
   Widget build(BuildContext context) {

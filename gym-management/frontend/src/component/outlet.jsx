@@ -6,6 +6,7 @@ import Planpage from "../pages/plan";
 import Testing from "../pages/Testing";
 import SReport from "../pages/SReport";
 import Payment from "../pages/Payment";
+import Dashboard from "../pages/dashboard";
 export default function Outlet() {
     return(
       <BrowserRouter>
@@ -14,7 +15,7 @@ export default function Outlet() {
             <div className="h-screen overflow-y-auto flex flex-col w-full">
                 <Navbar/>
                 <Routes>
-                  <Route path="/" element={<>dashboard</>}/>
+                  <Route path="/" element={<Dashboard/>}/>
                   <Route path="/admin" element={<>admin</>} />
                   <Route path="/reg" element={<Registartionpage/>} />
                   <Route path="/plan" element={<Planpage/>} />

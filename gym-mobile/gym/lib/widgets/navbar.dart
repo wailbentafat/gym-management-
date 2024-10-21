@@ -5,10 +5,10 @@ class CustomBottomNavigationBar extends StatefulWidget {
   final Function(int) onTap;
 
   const CustomBottomNavigationBar({
-    Key? key,
+    super.key,
     required this.currentIndex,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   _CustomBottomNavigationBarState createState() => _CustomBottomNavigationBarState();
