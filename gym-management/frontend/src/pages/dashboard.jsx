@@ -1,6 +1,7 @@
 import React from "react";
 import Actvmm from "../component/dashboard/activembr";
-
+import Analytics from "../component/dashboard/analytics";
+import MonthlyIncomeChart from "../component/dashboard/charts";
 export default function Dashboard() {
   return (
     <div className="grid grid-cols-[2fr_1fr] h-full bg-beigecustom">
@@ -9,8 +10,12 @@ export default function Dashboard() {
         <div>Heyy</div>
 
         <div className="grid grid-cols-[1fr_1fr] gap-4 mt-4">
-          <div>Heyyyy</div>
-          <div>Heyy</div>
+          <div>
+            <Analytics />
+          </div>
+          <div>
+            <MonthlyIncomeChart />
+          </div>
         </div>
 
         {/* Active Members Section */}
